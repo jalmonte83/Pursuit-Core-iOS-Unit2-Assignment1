@@ -10,8 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  override func viewDidLoad() {
+    @IBOutlet weak var firstButton: GameButton!
+    override func viewDidLoad() {
     super.viewDidLoad()
+        
+        print("im gonna fail again!!!")
     // Do any additional setup after loading the view, typically from a nib.
   }
 
