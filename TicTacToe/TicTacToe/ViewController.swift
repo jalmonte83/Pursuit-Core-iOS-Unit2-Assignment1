@@ -9,13 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // 1 == o, 2 == x
+var activePlayer = 1
+  
+    var gameState = [0,0,0,0,0,0,0,0,0]
 
-    @IBOutlet weak var firstButton: GameButton!
+    
+    
+    @IBAction func squarePressed(_ sender: GameButton) {
+        if activePlayer == 1 {
+            sender.setImage(UIImage(named: "o"), for: .normal)
+            activePlayer = 2
+        } else {
+            sender.setImage(UIImage(named: "x"), for: .normal)
+            activePlayer = 1
+        }
+    }
+    
     override func viewDidLoad() {
     super.viewDidLoad()
         
-        print("im gonna fail again!!!")
-    // Do any additional setup after loading the view, typically from a nib.
+      
   }
 
 
