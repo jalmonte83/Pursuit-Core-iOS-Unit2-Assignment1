@@ -37,7 +37,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="squarePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BsN-DM-qpC"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wdt-lC-68i"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDq-96-10f" customClass="GameButton" customModule="TicTacToe" customModuleProvider="target">
@@ -56,7 +56,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="squarePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8uQ-rz-miN"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="puX-HS-8n5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1J-bE-I8e" customClass="GameButton" customModule="TicTacToe" customModuleProvider="target">
@@ -75,7 +75,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="squarePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="23D-2h-0dK"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jbi-a0-Ls0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBO-u9-4Ry" customClass="GameButton" customModule="TicTacToe" customModuleProvider="target">
@@ -94,7 +94,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="squarePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y5H-bu-rsN"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yvq-Fu-Xgo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bya-cS-k6A" customClass="GameButton" customModule="TicTacToe" customModuleProvider="target">
@@ -113,7 +113,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="squarePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IWL-XS-XT9"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gw8-7L-0yX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gin-Bp-O1q" customClass="GameButton" customModule="TicTacToe" customModuleProvider="target">
@@ -132,7 +132,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="squarePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oca-e1-Dtr"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cAD-wt-YH2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxH-U6-e2t" customClass="GameButton" customModule="TicTacToe" customModuleProvider="target">
@@ -151,7 +151,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="squarePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xHz-ar-Wo2"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="puF-KM-M4y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqf-M0-Wxs" customClass="GameButton" customModule="TicTacToe" customModuleProvider="target">
@@ -170,7 +170,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="squarePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bi1-fk-0YX"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TFc-2t-EBh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ro2-Tq-yYQ" customClass="GameButton" customModule="TicTacToe" customModuleProvider="target">
@@ -189,7 +189,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="squarePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ga-yl-maw"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zSf-dR-gqA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Winner!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mi-oC-hRo">
@@ -203,11 +203,34 @@
                                 <rect key="frame" x="133" y="602" width="111" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="New Game"/>
+                                <connections>
+                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gf8-qi-rH0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.73023383649999996" green="1" blue="0.51967989729999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="buttons" destination="ro2-Tq-yYQ" collectionClass="NSMutableArray" id="O8h-ru-Nr7"/>
+                        <outletCollection property="allTheButtons" destination="ro2-Tq-yYQ" collectionClass="NSMutableArray" id="s56-Ff-tgM"/>
+                        <outletCollection property="allTheButtons" destination="hrs-ec-nUq" collectionClass="NSMutableArray" id="CcT-gN-lSt"/>
+                        <outletCollection property="allTheButtons" destination="HDq-96-10f" collectionClass="NSMutableArray" id="mT8-3V-qzQ"/>
+                        <outletCollection property="allTheButtons" destination="JBO-u9-4Ry" collectionClass="NSMutableArray" id="MER-Av-UzM"/>
+                        <outletCollection property="allTheButtons" destination="u1J-bE-I8e" collectionClass="NSMutableArray" id="5C2-LB-ks1"/>
+                        <outletCollection property="allTheButtons" destination="Yqf-M0-Wxs" collectionClass="NSMutableArray" id="Gc5-rL-yup"/>
+                        <outletCollection property="allTheButtons" destination="XxH-U6-e2t" collectionClass="NSMutableArray" id="cvH-w5-oqy"/>
+                        <outletCollection property="allTheButtons" destination="bya-cS-k6A" collectionClass="NSMutableArray" id="mZ4-M8-Sy3"/>
+                        <outletCollection property="allTheButtons" destination="Gin-Bp-O1q" collectionClass="NSMutableArray" id="9dI-97-Rc9"/>
+                        <outletCollection property="buttons" destination="hrs-ec-nUq" collectionClass="NSMutableArray" id="uuj-pM-pG6"/>
+                        <outletCollection property="buttons" destination="HDq-96-10f" collectionClass="NSMutableArray" id="wN2-wm-eYR"/>
+                        <outletCollection property="buttons" destination="JBO-u9-4Ry" collectionClass="NSMutableArray" id="zKA-Zz-olT"/>
+                        <outletCollection property="buttons" destination="u1J-bE-I8e" collectionClass="NSMutableArray" id="ULa-8F-G7Q"/>
+                        <outletCollection property="buttons" destination="Yqf-M0-Wxs" collectionClass="NSMutableArray" id="wBj-v4-dFf"/>
+                        <outletCollection property="buttons" destination="XxH-U6-e2t" collectionClass="NSMutableArray" id="yt2-Ko-bvG"/>
+                        <outletCollection property="buttons" destination="bya-cS-k6A" collectionClass="NSMutableArray" id="mOc-dD-lII"/>
+                        <outletCollection property="buttons" destination="Gin-Bp-O1q" collectionClass="NSMutableArray" id="3W7-4j-xvv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
