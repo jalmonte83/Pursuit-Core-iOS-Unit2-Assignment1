@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-     let brain = TicTacToeBrain()
-    @IBOutlet var buttons: [GameButton]!
     
+    @IBOutlet var buttons: [GameButton]!
+    var brain: TicTacToeBrain = TicTacToeBrain()
     @IBOutlet var allTheButtons: [GameButton]!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
             if brain.playerOneWins {
                 print("player One Wins!")
                 allTheButtons.forEach{(button) in
-                    button.isUserInteractionEnabled = false
+                    button.isEnabled = false
                     
                 }
             }
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
             if brain.playerTwoWins {
                 print("player Two Wins!")
                 allTheButtons.forEach{(button) in
-                    button.isUserInteractionEnabled = false
+                    button.isEnabled = false
                     
                 }
             }
@@ -54,14 +54,21 @@ class ViewController: UIViewController {
     
 
    
-//    @IBAction func resetGame(_ resetGameButton: gameButton) {
-//        cards = cards.shuffled()
-//        for (index, cardButton) in allCardButtons.enumerated() {
-//            cards[index].tag = index
-//            cardButton.tag = index
-//            cardButton.isEnabled = true
-//            cardButton.setImage(UIImage(named: MatchingGameName.pokemonCardBack), for: .normal)
-//        }
-//    }
+    @IBAction func newGame(_ sender: UIButton) {
+        brain.gameBoard =  [
+            [blankBox,blankBox,blankBox],
+            [blankBox,blankBox,blankBox],
+            [blankBox,blankBox,blankBox]
+                            ]
+        _ = brain.turnTracker
+        brain.turnTracker = 0
+        brain.playerOneWins = false
+        brain.playerOneWins = false
+       
+        allTheButtons.forEach{$0.isEnabled = true }
+        allTheButtons.forEach{ (button) in button.setBackgroundImage(UIImage(), for: .normal)}
+    }
 
 }
+
+
