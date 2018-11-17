@@ -21,17 +21,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonPressed(_ sender: GameButton) {
-        brain.enteredMove()
+        brain.playerMove()
         if brain.playerOne {
             brain.gameBoard[sender.row][sender.col] = o
                 sender.setBackgroundImage(UIImage(named: "o"), for: .normal)
             
 
-            brain.gameResult()
+            brain.winningCombo()
             if brain.playerOneWins {
                 print("player One Wins!")
                 allTheButtons.forEach{(button) in
-                    button.isEnabled = false
+                    button.isUserInteractionEnabled = false
                     
                 }
             }
@@ -39,11 +39,11 @@ class ViewController: UIViewController {
         } else if brain.playerTwo {
             brain.gameBoard[sender.row][sender.col] = x
             sender.setBackgroundImage(UIImage(named: "x"), for: .normal)
-            brain.gameResult()
+            brain.winningCombo()
             if brain.playerTwoWins {
                 print("player Two Wins!")
                 allTheButtons.forEach{(button) in
-                    button.isEnabled = false
+                    button.isUserInteractionEnabled = false
                     
                 }
             }
@@ -56,12 +56,12 @@ class ViewController: UIViewController {
    
     @IBAction func newGame(_ sender: UIButton) {
         brain.gameBoard =  [
-            [blankBox,blankBox,blankBox],
-            [blankBox,blankBox,blankBox],
-            [blankBox,blankBox,blankBox]
+            [blankSquare,blankSquare,blankSquare],
+            [blankSquare,blankSquare,blankSquare],
+            [blankSquare,blankSquare,blankSquare]
                             ]
-        _ = brain.turnTracker
-        brain.turnTracker = 0
+        _ = brain.playerTurn
+        brain.playerTurn = 0
         brain.playerOneWins = false
         brain.playerOneWins = false
        

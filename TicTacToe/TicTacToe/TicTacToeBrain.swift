@@ -9,31 +9,28 @@
 import UIKit
 
 
-var blankBox = "-"
+var blankSquare = "-"
 var x = "x"
 var o = "o"
 
-//struct TicTacToeMove {
-//    var x: String
-//    var o: String
-//}
+
 class TicTacToeBrain {
     
     
     var playerOne = false
     var playerTwo = false
     var gameBoard = [
-        [blankBox,blankBox,blankBox],
-        [blankBox,blankBox,blankBox],
-        [blankBox,blankBox,blankBox]
+        [blankSquare,blankSquare,blankSquare],
+        [blankSquare,blankSquare,blankSquare],
+        [blankSquare,blankSquare,blankSquare]
                         ]
     
-    var turnTracker = 0
+    var playerTurn = 0
     var playerOneWins = false
     var playerTwoWins = false
-    func enteredMove(){
-        turnTracker += 1
-        if turnTracker % 2 != 0 {
+    func playerMove(){
+        playerTurn += 1
+        if playerTurn % 2 != 0 {
             playerOne = true
             playerTwo = false
         } else {
@@ -42,8 +39,8 @@ class TicTacToeBrain {
         }
 }
 
-    func gameResult() {
-        for row in gameBoard { // this for loop checks only for horizontal wins
+    func winningCombo() {
+        for row in gameBoard {
             if row == [x,x,x] {
                 playerTwoWins = true
                 break
@@ -64,18 +61,18 @@ class TicTacToeBrain {
                 
             }
         }
-        var diagonal1 = [String]()
+        var diagonalOne = [String]()
         for i in 0..<gameBoard.count {
-            diagonal1.append(gameBoard[i][i])
-        if diagonal1 == [o,o,o] {
+            diagonalOne.append(gameBoard[i][i])
+        if diagonalOne == [o,o,o] {
             playerOneWins = true
-        } else if diagonal1 == [x,x,x]{
+        } else if diagonalOne == [x,x,x]{
             playerTwoWins = true
             }
     }
-        var diagonal2 = [String]()
+        var diagonalTwo = [String]()
         for i in 0..<gameBoard.count {
-            diagonal2.append(gameBoard[i][gameBoard.count - 1 - i])
+            diagonalTwo.append(gameBoard[i][gameBoard.count - 1 - i])
             }
 
         }
