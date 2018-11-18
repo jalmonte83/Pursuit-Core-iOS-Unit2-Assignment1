@@ -65,8 +65,8 @@ class ViewController: UIViewController {
         brain.playerOneWins = false
         brain.playerOneWins = false
        
-        allTheButtons.forEach{$0.isEnabled = true }
-        allTheButtons.forEach{ (button) in button.setBackgroundImage(UIImage(), for: .normal)}
+        allTheButtons.forEach{$0.isUserInteractionEnabled = true }
+       allTheButtons.forEach{ (button) in button.setBackgroundImage(UIImage(), for: .normal)}
     }
 
 }

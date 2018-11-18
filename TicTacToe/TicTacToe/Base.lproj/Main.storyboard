@@ -205,7 +205,6 @@
                                 <state key="normal" title="New Game"/>
                                 <connections>
                                     <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Orn-aY-pOS"/>
-                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gf8-qi-rH0"/>
                                 </connections>
                             </button>
                         </subviews>
